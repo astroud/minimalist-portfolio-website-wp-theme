@@ -8,7 +8,7 @@
   box-sizing: border-box
 
 // variables
-$background-body: #F2F2F2
+$background-body: #fafafa
 $text-color: #33323D
 $button-color: #203A4C
 $button-color-disabled: #D4D8DB
@@ -26,13 +26,21 @@ $button-bg-primary: url("data:image/svg+xml,%3Csvg width='48' height='48' viewBo
 $button-bg-hover: url("data:image/svg+xml,%3Csvg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect opacity='0.1' width='48' height='48' fill='black'/%3E%3Cpath d='M16 26L24 30L32 26' stroke='white'/%3E%3Cpath opacity='0.5' d='M16 22L24 26L32 22' stroke='white'/%3E%3Cpath opacity='0.25' d='M16 18L24 22L32 18' stroke='white'/%3E%3C/svg%3E%0A") left center no-repeat, url("data:image/svg+xml,%3Csvg width='18' height='14' viewBox='0 0 18 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 9L9 13L17 9' stroke='white'/%3E%3Cpath opacity='0.5' d='M1 5L9 9L17 5' stroke='white'/%3E%3Cpath opacity='0.25' d='M1 1L9 5L17 1' stroke='white'/%3E%3C/svg%3E%0A") 1rem center no-repeat
 $button-bg-disabled: url("data:image/svg+xml,%3Csvg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect opacity='0.1' width='48' height='48' fill='black'/%3E%3Cpath d='M16 26L24 30L32 26' stroke='%235FB4A2'/%3E%3Cpath opacity='0.5' d='M16 22L24 26L32 22' stroke='%235FB4A2'/%3E%3Cpath opacity='0.05' d='M16 18L24 22L32 18' stroke='%235FB4A2'/%3E%3C/svg%3E%0A") left center no-repeat, url("data:image/svg+xml,%3Csvg width='18' height='14' viewBox='0 0 18 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.05'%3E%3Cpath d='M1 9L9 13L17 9' stroke='%235FB4A2'/%3E%3Cpath opacity='0.05' d='M1 5L9 9L17 5' stroke='%235FB4A2'/%3E%3Cpath opacity='0.05' d='M1 1L9 5L17 1' stroke='%235FB4A2'/%3E%3C/g%3E%3C/svg%3E%0A") 1rem center no-repeat
 
+div.wrapper
+  min-height: 100vh
+  display: flex
+  flex-direction: column
+  max-width: 90rem
+  margin: 0 $padding-content-desktop 0 $padding-content-desktop
+  background: $background-body
+
 body
   min-height: 100vh
   display: flex
   flex-direction: column
   align-items: center
 
-  background: $background-body
+  background: #f2f2f2
   color: $text-color
   font-family: $font-body
   font-size: 1rem
@@ -97,30 +105,31 @@ button.secondary-button
 
 main
   flex-grow: 1
-  margin: 0 $padding-content-desktop 0 $padding-content-desktop
+  padding: 0 $padding-content-desktop 0 $padding-content-desktop
 
 header
   flex-shrink: 0
   padding: 4rem $padding-content-desktop 3.375rem $padding-content-desktop
   display: flex
   justify-content: space-between
-  width: 100vw
+  width: 100%
 
-  a
-    color: $text-color
-    font-family: $font-body
-    font-size: 0.75rem
-    line-height: 0.875rem
-    letter-spacing: 0.125rem
-    text-transform: uppercase
-    text-decoration: none
-    margin-left: 2.625rem
-
-    &:visited
+  nav
+    a
       color: $text-color
+      font-family: $font-body
+      font-size: 0.75rem
+      line-height: 0.875rem
+      letter-spacing: 0.125rem
+      text-transform: uppercase
+      text-decoration: none
+      margin-left: 2.625rem
 
-    &:hover
-      color: $button-color-hover
+      &:visited
+        color: $text-color
+
+      &:hover
+        color: $button-color-hover
 
 footer
   flex-shrink: 0
@@ -129,11 +138,12 @@ footer
   align-items: center
   background: $footer-bg
   padding: 1.5rem $padding-content-desktop 1.5rem $padding-content-desktop
-  width: 100vw
+  width: 100%
 
   nav
     display: flex
     align-items: center
+    justify-content: space-between
 
     a
       color: #fff
