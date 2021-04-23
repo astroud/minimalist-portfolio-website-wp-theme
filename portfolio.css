@@ -117,6 +117,9 @@ header nav a:visited {
 header nav a:hover {
   color: #5FB4A2;
 }
+header svg:hover {
+  color: #5FB4A2;
+}
 
 footer {
   flex-shrink: 0;
@@ -185,6 +188,39 @@ div.cta h2 {
 div.cta div.button-wrapper {
   background: #fafafa;
   padding-left: 2rem;
+}
+
+section.section-left {
+  margin-right: 5.9375rem;
+}
+section.section-left div.section-text {
+  margin-left: 7.8125rem;
+}
+
+section.section-right {
+  margin-left: 5.9375rem;
+}
+section.section-right div.section-text {
+  order: -1;
+  margin-right: 7.8125rem;
+}
+
+section.section-left, section.section-right {
+  display: flex;
+  margin-bottom: 5rem;
+}
+section.section-left div.section-text, section.section-right div.section-text {
+  padding: 3.125rem 0 3.125rem 0;
+  max-width: 21.875rem;
+  border-width: 0.0625rem 0 0.0625rem 0;
+  border-style: solid;
+  border-color: rgba(51, 50, 61, 0.15);
+}
+section.section-left div.section-text h2, section.section-right div.section-text h2 {
+  margin-bottom: 1.75rem;
+}
+section.section-left div.section-text button, section.section-right div.section-text button {
+  margin-top: 1.5rem;
 }
 
 /*# sourceMappingURL=portfolio.css.map */

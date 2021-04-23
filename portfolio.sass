@@ -137,6 +137,10 @@ header
       &:hover
         color: $button-color-hover
 
+  svg
+    &:hover
+      color: $button-color-hover
+
 footer
   flex-shrink: 0
   display: flex
@@ -202,3 +206,33 @@ div.cta
   div.button-wrapper
     background: $background-body
     padding-left: 2rem
+
+section.section-left
+  margin-right: 5.9375rem
+
+  div.section-text
+    margin-left: 7.8125rem
+
+section.section-right
+  margin-left: 5.9375rem
+
+  div.section-text
+    order: -1
+    margin-right: 7.8125rem
+
+section.section-left, section.section-right
+  display: flex
+  margin-bottom: 5rem
+
+  div.section-text
+    padding: 3.125rem 0 3.125rem 0
+    max-width: 21.875rem
+    border-width: 0.0625rem 0 0.0625rem 0
+    border-style: solid
+    border-color: rgba(51,50,61,0.15)
+
+    h2
+      margin-bottom: 1.75rem
+
+    button
+      margin-top: 1.5rem
