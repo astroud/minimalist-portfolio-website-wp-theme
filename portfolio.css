@@ -28,6 +28,9 @@ body {
 body .body2 {
   font-size: 0.9375rem;
 }
+body a {
+  color: #33323D;
+}
 body h1, body h2, body h3, body h4, body h5 {
   font-family: "Ibarra Real Nova", serif;
   font-style: normal;
@@ -48,6 +51,10 @@ body h3 {
   font-size: 2rem;
   line-height: 2.25rem;
   letter-spacing: -0.01798117rem;
+  margin-bottom: 1.75rem;
+}
+body p {
+  margin-bottom: 2.5rem;
 }
 
 button {
@@ -116,6 +123,9 @@ header nav a:visited {
 }
 header nav a:hover {
   color: #5FB4A2;
+}
+header nav a svg:visited {
+  color: #33323D;
 }
 header svg:hover {
   color: #5FB4A2;
@@ -221,6 +231,70 @@ section.section-left div.section-text h2, section.section-right div.section-text
 }
 section.section-left div.section-text button, section.section-right div.section-text button {
   margin-top: 1.5rem;
+}
+
+div.wrapper-portfolio-piece {
+  display: flex;
+  font-size: 0.9375rem;
+}
+div.wrapper-portfolio-piece div.details {
+  max-width: 21.875rem;
+  margin-right: 7.8125rem;
+}
+div.wrapper-portfolio-piece div.details a, div.wrapper-portfolio-piece div.details a:visited {
+  color: #5FB4A2;
+  text-decoration: none;
+}
+div.wrapper-portfolio-piece div.details a:hover, div.wrapper-portfolio-piece div.details a:visited:hover {
+  text-decoration: underline;
+}
+div.wrapper-portfolio-piece div.description img {
+  margin-bottom: 2rem;
+}
+
+div.portfolio-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+div.portfolio-navigation .previous, div.portfolio-navigation .next {
+  width: 50%;
+  border: 0.0625rem solid rgba(51, 50, 61, 0.15);
+  border-right: none;
+  font-family: Ibarra Real Nova;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  letter-spacing: -0.01798117rem;
+  margin-bottom: 1.75rem;
+}
+div.portfolio-navigation .previous span, div.portfolio-navigation .next span {
+  display: inline-block;
+  width: 100%;
+  font-family: Public Sans;
+  font-size: 1rem;
+  line-height: 1.875rem;
+  color: #33323D;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+div.portfolio-navigation .previous {
+  border-left: none;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='16'%3E%3Cpath fill='none' stroke='%2333323D' d='M9 0L1 8l8 8'/%3E%3C/svg%3E") left center no-repeat;
+}
+div.portfolio-navigation .next {
+  text-align: right;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='16'%3E%3Cpath fill='none' stroke='%2333323D' d='M1 0l8 8-8 8'/%3E%3C/svg%3E") right center no-repeat;
+}
+div.portfolio-navigation a, div.portfolio-navigation a:visited {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  color: #33323D;
+  text-decoration: none;
+}
+div.portfolio-navigation a:hover, div.portfolio-navigation a:visited:hover {
+  color: #5FB4A2;
 }
 
 /*# sourceMappingURL=portfolio.css.map */
